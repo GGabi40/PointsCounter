@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Kanit:wght@300&family=Roboto+Condensed&family=Roboto+Mono:wght@700&display=swap');
+/* 
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'Kanit', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+ */
+
+:root {
+    --background-color: rgb(9, 9, 46);
+    --details-primary-color: yellow;
+    --details-secundary-color: rgba(255, 255, 0, 0.096);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: var(--background-color);
+    min-height: 100%;
+    width: 100vw;
+}
+
+header {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--details-secundary-color),
+        var(--details-secundary-color),
+        transparent
+    );
+
+    text-align: center;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+
+    padding: 15px;
+    margin: 0 20px 50px 20px;
+    border-bottom: 0.5px solid mediumaquamarine;
+    box-shadow: 0.5px 2px 10px 0.5px yellow;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+.add-gamers, .winner {
+    text-align: center;
+    font-family: 'Roboto';
+    color: greenyellow;
+}
+
+.add-gamers, .winner h3 {
+    text-shadow: 0.5px 0.5px 0.5px red;
+}
+
+.add-gamers #gamer-name, #add-points, #points-end {
+    height: 20px;
+    width: 30%;
+
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    font-weight: 900;
+    color: white;
+
+    background-color: rgba(94, 72, 116, 0.212);
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.add-gamers #btn-add-gamer {
+    padding: 6px;
+    margin-top: 10px;
+
+    border-radius: 8px;
+    border: none;
+}
+
+#btn-add-gamer:hover {
+    cursor: pointer;
+    animation: glow 5.5s infinite;
+    border: none;
+    font-weight: 700;
+}
+
+@keyframes glow {
+    0% { box-shadow: 1px 1px 5px red; }
+    30% { box-shadow: 1px 1px 5px orangered;}
+    50% { box-shadow: 1px 1px 5px yellow;}
+    70% { box-shadow: 1px 1px 5px green;}
+    90% { box-shadow: 1px 1px 5px cyan; }
+    95% { box-shadow: 1px 1px 5px blue;}
+    100% { box-shadow: 1px 1px 5px purple;}
+}
+
+.table-section{
+    display: flex;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+}
+
+table, th, td {
+    margin: 10px auto;
+    border: 1px solid rgb(121, 160, 160);
+    border-collapse: collapse;
+    padding: 12px;
+
+    color: white;
+}
+
+table thead {
+    font-family: 'Roboto';
+}
+
+table tbody {
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    text-align: left;
+}
+
+#action {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+#action:hover {
+    cursor: pointer;
+    background-color: rgb(83, 83, 83);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:active {
+    color: yellow;
+}

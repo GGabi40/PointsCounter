@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Points Counter</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Points Counter+
+        </h1>
+        <h2><i>Are you ready to Lose?</i></h2>
+    </header>
+
+    <section class="add-gamers">
+        <h3>First, tell me who are the gamers?</h3>
+        <h3>And, how many points do you want to add?</h3>
+
+        <form id="gamer-form">
+            <input type="text" name="gamer" id="gamer-name" placeholder="Username Ex.: GGabi40" autocomplete="on" required>
+            <input type="number" name="points" id="add-points" placeholder="Points Ex.: 3">
+            <input type="submit" value="+" id="btn-add-gamer">
+        </form>
+    </section>
+
+    <section class="table-section">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Victories</th>
+                    <th>Ties</th>
+                    <th>Defeats</th>
+                    <th>Points</th>
+                    <th colspan="3">Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-table"></tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <p>Desenvolved by <a href="https://instagram.com/ggabi40" target="_blank">GGabi40</a> <strong>| 2023</strong></p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
