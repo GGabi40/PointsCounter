@@ -10,7 +10,6 @@ submit.addEventListener('click', function(e) {
     writeTable();
 
     inputUser.value = '';
-    inputPoints.value = '0';
 });
 
 var players = [];
@@ -56,8 +55,6 @@ function addVictory(i) {
 
     addPoints(i);
     writeTable();
-
-    inputPoints.value = '0';
 }
 
 function addTie(i) {
@@ -71,6 +68,4 @@ function addDefeat(i) {
 
     addPoints(i);
     writeTable();
-
-    inputPoints.value = '0';
 }
